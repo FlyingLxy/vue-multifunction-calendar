@@ -243,6 +243,10 @@
 </template>
 
 <style scoped>
+ul,ol,p,h1,h2,h3,h4,h5,h6,div,span,i {
+  margin: 0;
+  padding: 0;
+}
 ul,ol {
   list-style: none;
 }
