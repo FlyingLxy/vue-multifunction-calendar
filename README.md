@@ -1,9 +1,7 @@
 # vue-calendar
 Support vue2.0 , simple calendar.
 
-# props:
-
-# property
+# attributes
 date:  Date 类型, 设置日历当前日
 ```
 <calendar :date="new Date()"><calendar>
