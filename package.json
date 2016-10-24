@@ -1,0 +1,17 @@
+{
+  "name": "vue-multifunction-calendar",
+  "version": "1.0.0",
+  "description": "Support single calendar and double calendar.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "github/flyinglxy/vue-multifunction-calendar"
+  },
+  "keywords": [
+    "vue",
+    "calendar",
+    "vue-calendar"
+  ],
+  "author": "XiaoYu.lang",
+  "license": "MIT"
+}
