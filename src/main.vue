@@ -257,7 +257,6 @@
   text-align: center;
   vertical-align: top;
 }
-
 .calendar-select-pre,
 .calendar-select-next {
   margin: 0px 1%;

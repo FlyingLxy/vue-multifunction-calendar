@@ -1,5 +1,6 @@
 # vue-calendar
-Support vue2.0 , simple calendar.
+- version: 1.0.2
+- Support vue2.0 , simple calendar.
 
 # attributes
 date:  Date 类型, 设置日历当前日
@@ -35,8 +36,8 @@ params: String, '1970-01-01'
 ...vue
 methods: {
     getSelectedDate: function(params) {
-	params  // xxxx-xx-xx
-	//....coding
+      params  // xxxx-xx-xx
+      //....coding
     }
 }
 ```
