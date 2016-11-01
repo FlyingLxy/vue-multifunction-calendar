@@ -32,7 +32,7 @@ endYear: String、Number 类型， 设置日历可选范围的结束
 click calendar day call callback(params)
 params: String, '1970-01-01'
 ```
-<calendar @dateChange="getSelectedDate"></calendar>
+<calendar @change="getSelectedDate"></calendar>
 ...vue
 methods: {
     getSelectedDate: function(params) {
