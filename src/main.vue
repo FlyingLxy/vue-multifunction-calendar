@@ -1,12 +1,12 @@
 <script>
 /**
  * @file 日历组件
- * @param { Date } Date - 当前日期的Date实例. 默认为 new Date()
+ * @param { date } Date - 当前日期的Date实例. 默认为 new Date()
  * @param { className } String - 外部容器自定义类名. 默认为: calendar
  * @param { calendarTitle } String - 日历上方当前选中日期左侧文字. 默认为： 当前日期
  * @param { startYear/endYear } String/Number - 可选的年份的范围. 默认为： 1901/2050
  * @param { change } CallBack - 日期变化触发回调. 传入参数: xxxx-xx-xx String类型
- * @author langxiaoyu@autohome.com
+ * @author XiaoYu.Lang Email: webdeveloperfox@gmail.com
  */
 
 import '../font/iconfont.css';
@@ -62,6 +62,10 @@ export default {
         calendarTitle: {
             type: String,
             default: '当前日期'
+        },
+        isShwo: {
+            type: Boolean,
+            default: true
         },
         // 开始时间/结束时间
         startYear: {
@@ -217,7 +221,7 @@ export default {
             // 格式化年月日 xxxx-xx-xx
             m = m < 10 ? '0' + m : m;
             d = d < 10 ? '0' + d : d;
-            return y + '-' + m + '-' + d;
+            return `${y}-${m}-${d}`;
         },
         calendarClickHandler: function (e) {
             // 点击空白处事件
@@ -229,7 +233,10 @@ export default {
 </script>
 
 <template>
-    <div :class="'calendar ' + className">
+    <div
+        :class="'calendar ' + className"
+        v-show="isShow"
+        >
         <div class="calendar-date" v-text="`${calendarTitle} ${currentYear}-${currentMonth}-${currentDate}`"></div>
         <div class="calendar-select">
             <span class="calendar-select-pre" @click="pre">

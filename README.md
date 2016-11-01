@@ -1,47 +1,54 @@
 # vue-calendar
-- version: 1.0.2
-- Support vue2.0 , simple calendar.
+git: git: github.com/FlyingLxy/vue-multifunction-calendar
+> version: 1.0.4
+> Support vue2.0 , simple calendar.
 
-# attributes
-date:  Date 类型, 设置日历当前日
-```
-<calendar :date="new Date()"><calendar>
-```
+### Install
+> npm install vue-multifunction-calendar --save
 
-className: String 类型, 设置外部容器类名
-```
-<calendar className="calendar"></calendar>
-```
+### Option
+- **date** Date: Date instance. Default: new Date()
+- **className** String: Custom class. Default: 'calendar'
+- **calendarTitle** String: Title description. Default: '当前日期'
+- **startYear** String/Number: Start year range. Default: 1901
+- **endYear** String/Number: End year range. Default: 2050
+- **isShow** Boolean: Show trigger. Default: true
+- **change** CallBack: Date change callBack. **param**: String 'xxxx-xx-xx'
 
-calendarTitle: String 类型, 设置日历上方的title
-```
-<calendar calendarTitle="当前日期"><calendar>
-```
-
-starYear: String、Number 类型, 设置日历可选范围的开始
-```
-<calendar starYear="1970"></calendar>
-```
-
-endYear: String、Number 类型， 设置日历可选范围的结束
-```
-<calendar endYear="2020"></calendar>
-```
-
-# method (callback)
-click calendar day call callback(params)
-params: String, '1970-01-01'
-```
-<calendar @change="getSelectedDate"></calendar>
-...vue
-methods: {
-    getSelectedDate: function(params) {
-      params  // xxxx-xx-xx
-      //....coding
+### Example
+```javascript
+// xx.vue
+// script
+<script>
+import calendar from 'vue-multifunction-calendar';
+export default {
+    data() {
+        return {
+            data: new Date()
+            isShow: true
+        }
+    },
+    methods: {
+        dateHandler: function (date) {
+            console.log(date) // '2000-01-01'
+            this.isShow = false;
+            //...code
+        }
     }
 }
-```
+</script>
 
-```
-import 'calendar' from 'vue-multifunction-calendar';
+// template
+<template>
+    <calendar
+        :className="myCalendar"
+        :date="date"
+	:isShow="isShow"
+        calendarTitle="当前日期"
+        startYear="2000"
+        endYear="2050"
+        @change="dateHandler"
+        >
+    </calendar>
+</template>
 ```
