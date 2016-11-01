@@ -2,26 +2,26 @@
   "_args": [
     [
       {
-        "raw": "vue-multifunction-calendar",
+        "raw": "vue-multifunction-calendar@1.0.2",
         "scope": null,
         "escapedName": "vue-multifunction-calendar",
         "name": "vue-multifunction-calendar",
-        "rawSpec": "1.0.5",
-        "spec": "1.0.5",
+        "rawSpec": "1.0.2",
+        "spec": "1.0.2",
         "type": "version"
       },
-      "/Users/lxy/Documents/vue-double-calendar"
+      "/Users/lxy/Documents/vuejs/calendar"
     ]
   ],
-  "_from": "vue-multifunction-calendar@latest",
-  "_id": "vue-multifunction-calendar@1.0.5",
+  "_from": "vue-multifunction-calendar@1.0.2",
+  "_id": "vue-multifunction-calendar@1.0.2",
   "_inCache": true,
   "_installable": true,
   "_location": "/vue-multifunction-calendar",
   "_nodeVersion": "6.2.0",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/vue-multifunction-calendar-1.0.5.tgz_1477470757337_0.38347875140607357"
+    "tmp": "tmp/vue-multifunction-calendar-1.0.2.tgz_1477470757337_0.38347875140607357"
   },
   "_npmUser": {
     "name": "flyingfox",
@@ -30,23 +30,23 @@
   "_npmVersion": "3.10.3",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "vue-multifunction-calendar@1.0.5",
+    "raw": "vue-multifunction-calendar@1.0.2",
     "scope": null,
     "escapedName": "vue-multifunction-calendar",
     "name": "vue-multifunction-calendar",
-    "rawSpec": "1.0.5",
-    "spec": "1.0.5",
+    "rawSpec": "1.0.2",
+    "spec": "1.0.2",
     "type": "version"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/vue-multifunction-calendar/-/vue-multifunction-calendar-1.0.5.tgz",
+  "_resolved": "https://registry.npmjs.org/vue-multifunction-calendar/-/vue-multifunction-calendar-1.0.2.tgz",
   "_shasum": "705c5ed79b13d1c38dc39aa7281142611c682e33",
   "_shrinkwrap": null,
-  "_spec": "vue-multifunction-calendar@1.0.5",
-  "_where": "/Users/lxy/Documents/vue-double-calendar",
+  "_spec": "vue-multifunction-calendar@1.0.2",
+  "_where": "/Users/lxy/Documents/vuejs/calendar",
   "author": {
     "name": "XiaoYu.lang"
   },
@@ -56,7 +56,7 @@
   "directories": {},
   "dist": {
     "shasum": "705c5ed79b13d1c38dc39aa7281142611c682e33",
-    "tarball": "https://registry.npmjs.org/vue-multifunction-calendar/-/vue-multifunction-calendar-1.0.5.tgz"
+    "tarball": "https://registry.npmjs.org/vue-multifunction-calendar/-/vue-multifunction-calendar-1.0.2.tgz"
   },
   "gitHead": "f96f879383f9c92d08849fa9f80086158aaea15c",
   "keywords": [
@@ -80,5 +80,5 @@
     "url": "github/FlyingLxy/vue-multifunction-calendar"
   },
   "scripts": {},
-  "version": "1.0.6"
+  "version": "1.0.2"
 }
