@@ -53,7 +53,7 @@
 
 <style>
 .calendar-days {
-  padding: 10px 0;
+  padding: 4px 0;
   border: 1px solid #eee;
   border-top: 0;
   background-color: #fff;
@@ -64,17 +64,16 @@
   display: inline-block;
   margin: 0px 1%;
   width: 12.28%;
-  height: 30px;
+  height: 22px;
   font-size: 14px;
   text-align: center;
 }
 .calendar-days span {
   display: block;
   margin: 0 auto;
-  padding: 5px;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
   border-radius: 50%;
   cursor: pointer;
 }

@@ -82,7 +82,7 @@
   height: 100%;
 }
 .calendar-dropdown span p {
-  margin-right: 16px;
+  margin-right: 14px;
   height: 100%;
   text-align: center;
   font-size: 14px;
@@ -92,8 +92,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  margin-right: 7px;
-  font-size: 16px;
+  margin-right: 6px;
+  font-size: 12px;
 }
 
 /* 下拉菜单列表 */
@@ -115,10 +115,10 @@
   overflow-x: hidden;
   overflow-y: scroll;
 }
-.calendar-dropdown-list li {
+.calendar-dropdown-list ul li {
   margin-right: 15px;
 }
-.calendar-dropdown-list li:hover {
+.calendar-dropdown-list ul li:hover {
   background-color: #eee;
 }
 
