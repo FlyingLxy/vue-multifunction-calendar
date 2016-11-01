@@ -238,7 +238,16 @@ export default {
         :class="'calendar ' + className"
         v-show="isShow"
         >
-        <div class="calendar-date" v-text="`${calendarTitle} ${currentYear}-${currentMonth}-${currentDate}`"></div>
+        <div class="calendar-date">
+            <div class="calendar-title" v-text="calendarTitle"></div>
+            <div class="calendar-date-title">
+                <span class="title-year" v-text="currentYear"></span>
+                <span class="title-symbol">-</span>
+                <span class="title-month" v-text="currentMonth < 10 ? '0' + currentMonth : currentMonth"></span>
+                <span class="title-symbol">-</span>
+                <span class="title-date" v-text="currentDate < 10 ? '0' + currentDate : currentDate"></span>
+            </div>
+        </div>
         <div class="calendar-select">
             <span class="calendar-select-pre" @click="pre">
                 <i class="iconfont icon-right"></i>
@@ -306,6 +315,37 @@ ul,ol,li,p,h1,h2,h3,h4,h5,h6 {
     vertical-align: baseline;
     font-size: 14px;
     font-weight: bold;
+}
+.calendar-title {
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 14px;
+}
+.calendar-date-title {
+    display: inline-block;
+}
+.calendar-date-title span {
+    display: inline-block;
+    font-size: 0;
+}
+.calendar-date-title .title-year {
+    width: 38px;
+    font-size: 14px;
+    text-align: center;
+}
+.calendar-date-title .title-month {
+    width: 22px;
+    font-size: 14px;
+    text-align: center;
+}
+.calendar-date-title .title-date {
+    width: 24px;
+    font-size: 14px;
+    text-align: center;
+}
+.calendar-date-title .title-symbol {
+    font-size: 14px;
+    text-align: center;
 }
 .calendar-select {
     width: 100%;
